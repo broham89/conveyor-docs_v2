@@ -38,7 +38,11 @@ body {
 	line-height: 1.6;
 	font-weight: 400;
 	font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande", sans-serif;
-	background: #fbfbfb;
+	background: rgb(124,228,251); /* Old browsers */
+  background: -moz-linear-gradient(-45deg, rgb(124,228,251) 0%, rgb(37,100,211) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgb(124,228,251) 0%,rgb(37,100,211) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgb(124,228,251) 0%,rgb(37,100,211) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ce4fb', endColorstr='#2564d3', GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
 	&.nav-open {
 		overflow: hidden;
